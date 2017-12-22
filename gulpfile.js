@@ -58,7 +58,7 @@ var config = {
 
 
 gulp.task('vendorJs:build', function () {
-    gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/jquery/dist/jquery.min.js'])
+    gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/jquery/dist/jquery.min.js','node_modules/wow.js/dist/wow.min.js'])
         .pipe(gulp.dest(path.vendor.js))
         .pipe(gulp.dest(path.dist.js))
 });

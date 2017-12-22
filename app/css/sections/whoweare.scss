@@ -1,0 +1,30 @@
+#whoweare {
+	padding: 100px 0 90px;
+	position: relative;
+
+	&:before {
+		content: " ";
+		display: block;
+		position: absolute;
+		top: 0px;
+    	right: -16%;
+    	border-top: 568px solid $black;
+    	border-left: 420px solid transparent;
+    	border-right: 420px solid transparent;
+    	height: 100%;
+    	width: 80%
+	}
+}
+
+.whoweare__title, .whoweare__desc {
+	margin-bottom: 80px;
+}
+
+a.whoweare__btn {
+	background: $red;
+	color: $white;
+}
+
+.whoweare-img__pic {
+	width: 100%;
+}

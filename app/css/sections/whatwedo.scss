@@ -1,0 +1,58 @@
+#whatwedo {
+	background: $gray;
+	position: relative;
+	padding: 94px 0 20px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+    	margin-top: -94px;
+		width: 0;
+		height: 0;
+		border-top: 94px solid transparent;
+		border-left: 100px solid $red;
+		border-bottom: 94px solid transparent;
+	}
+}
+
+.whatwedo__title {
+	text-align: center;
+	margin-bottom: 88px;
+}
+
+.whatwedo-list__item {
+	margin-bottom: 98px;
+}
+
+.whatwedo-item__img {
+	@include inlineblock();
+	position: relative;
+	width: 74px;
+	height:74px;
+	background: $red;
+	border-radius: 50%;
+	margin-right: 4%;
+}
+
+.whatwedo-item__pic {
+	position: absolute;
+    left: 50%;
+    margin-left: -22%;
+    top: 50%;
+    margin-top: -22%;
+}
+
+.whatwedo-item__block {
+	@include inlineblock();
+	width: 74%;
+	padding-top: 20px;
+}
+
+.whatwedo-item__title {
+	font-family: 'OpenSans-extrabold';
+	font-size: 30px;
+	letter-spacing: -0.03em;
+	margin-bottom: 16px;
+}
+

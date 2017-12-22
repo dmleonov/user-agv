@@ -17,7 +17,8 @@
     "gulp-watch": "^4.1.1",
     "imagemin-pngquant": "^4.0.0",
     "jquery": "^3.2.1",
-    "rimraf": "^2.3.1"
+    "rimraf": "^2.3.1",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {},
   "scripts": {

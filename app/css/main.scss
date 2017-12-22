@@ -2,16 +2,21 @@
 $body-font : 'Open Sans', Arial, 'sans serif';
 
 // color
-$while: #fff;
+$white: #fff;
 $red: #bc2e3a;
 $black: #171717;
 $gray: #f5f5f5;
 
 // layout
-@import "";
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
 
 // styles
-@import "";
-
-// media
-@import "";
+@import "sections/header";
+@import "sections/whoweare";
+@import "sections/whatwedo";
+@import "sections/works";
+@import "sections/creative";
+@import "sections/client";
+@import "sections/footer";

@@ -1,0 +1,97 @@
+body {
+	overflow-x: hidden;
+}
+
+#header {
+	background: url(../img/bg/Place.jpg) no-repeat center top;
+	position: relative;
+	color: $white;
+	padding-bottom: 170px;
+
+	&:before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(188, 46, 58, .8);
+	}
+}
+
+.head {
+	padding-top: 12px;
+	margin-bottom: 170px;
+}
+
+.head-img {
+	font-family: 'lato-black';
+	font-size: 43px;
+}
+
+.head-nav, .head__list {
+	padding-top: 25px;
+}
+ 
+ .head-nav__list, .head__list {
+ 	display: flex;
+ 	justify-content: space-around;
+ 	text-transform: uppercase;
+ 	font-family: 'lato-bold';
+ 	font-size: 15px;
+ }
+
+ a.nav-item__link, .list-item__link{
+ 	text-decoration: none;
+ 	color: $white;
+ }
+
+  a.nav-item__link {
+  	display: block;
+  	@include transition(1s);
+  	&:hover {
+  		@include transform(rotate(360deg));
+  		@include transition(1s);
+  	}
+  }
+
+ .main {
+ 	text-align: center;
+ }
+
+ .main__offer {
+ 	font-family: 'LemonMilkbold';
+ 	font-size: 158px;
+	line-height: 0.9em;
+	 background: url(../img/bg/Place.jpg) no-repeat;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	text-shadow: 0 0 2em $black;
+  	margin-bottom: 67px;
+ }
+
+ .main-offer__desc {
+ 	display: block;
+ 	font-size: 96px;
+ 	line-height: 0.9em;
+ }
+
+ a.main__btn {
+ 	color: $black;
+ 	background: $white;
+ 	position: relative;
+    z-index: 1;
+ }
+
+ .main-img__up, .main-img__down {
+ 	position: absolute;
+ }
+
+ .main-img__up {
+ 	left: -65%;
+ 	top: -152px;
+ 	z-index: 1;
+ }
+
+ .main-img__down {
+ 	left: -124%; 
+ }

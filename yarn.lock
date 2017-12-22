@@ -4198,6 +4198,10 @@ wordwrap@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
 
+wow.js@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/wow.js/-/wow.js-1.2.2.tgz#247519b0a342319b1a63e22aea9acec1a9ea57f5"
+
 wrap-ansi@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-2.1.0.tgz#d8fc3d284dd05794fe84973caecdd1cf824fdd85"

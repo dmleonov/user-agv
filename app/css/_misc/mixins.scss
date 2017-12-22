@@ -34,6 +34,13 @@
 	transition: $transition;
 }
 
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-o-transform: $transform;
+	transform: $transform;
+}
+
 // //responsive
 @function rem($px) {
 	@return $px / 16px + 0rem;

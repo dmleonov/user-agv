@@ -1,0 +1,123 @@
+#works {
+	padding: 130px 0 200px;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		margin-top: -100px;
+		right: 0;
+		border-top: 500px solid transparent;
+		border-right: 500px solid $red;
+		border-bottom: 500px solid transparent;
+	}
+}
+
+.works__title {
+	margin-bottom: 62px;
+}
+
+.works__desc {
+	width: 80%;
+	margin-bottom: 50px;
+}
+
+a.works__link {
+	background: $red;
+	color: $white;
+}
+
+.works__list {
+	display: flex;
+	position: relative;
+    z-index: 1;
+}
+
+.works-list__item {	
+	position: relative;
+	width: 360px;
+    height: 290px;
+	margin-right: 10px;
+}
+
+a.works-item__link {
+	text-decoration: none;
+	color: $white;
+	&:before{
+		content: "";
+		position: absolute;
+		background: url('../img/assets/idea.png') center top;
+		background-color: $black;
+		width: 100%;
+		height: 100%;
+		@include transform(skew(-20deg));
+		z-index: -1;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@include transform(skew(-20deg));
+		z-index: -1;
+	}
+
+	&:hover {
+		&,.works-link__title {
+			padding-top: 0;
+		}
+
+		&,.works-link__desc {
+			display: block;
+			@include transition(3s);
+		}
+	}
+}
+
+a.works-item__two {
+	&:before{
+		content: "";
+		background: url('../img/assets/design.png') center top;
+		background-color: $black;
+		z-index: -1;
+	}
+}
+
+a.works-item__three {
+	&:before{
+		content: "";
+		background: url('../img/assets/Place.png') center top;
+		background-color: $black;
+		z-index: -1;
+	}
+}
+
+.works-link__number {
+	text-align: right;
+	color: $white;
+	font-family: 'lato-bold';
+	font-size: 58px;
+	margin-bottom: 38px;
+}
+
+.works-link__title {
+	text-transform: uppercase;
+	font-family: 'lato-bold';
+	font-size: 40px;
+	@include transition(3s);
+	padding-top: 78px;
+}
+
+.works-link__desc {
+	display: none;
+	color: $white;	
+    font-size: 18px;
+    line-height: 1.5em;
+    @include transition(3s);
+}
+
+
